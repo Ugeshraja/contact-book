@@ -15,6 +15,10 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/contacts")
+@CrossOrigin(origins = {
+    "http://localhost:3000",
+    "https://contact-book-lilac-tau.vercel.app"
+})
 public class ContactController {
 
     private final ContactService contactService;
